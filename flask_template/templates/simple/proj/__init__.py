@@ -10,6 +10,8 @@ def create_app():
 
     configure_log(app)
     register_extensions(app)
+
+    from proj import models  # noqa
     return app
 
 

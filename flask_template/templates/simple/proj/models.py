@@ -7,7 +7,7 @@ from sqlalchemy import TypeDecorator, ForeignKey, inspect
 from sqlalchemy.orm import relationship, backref
 
 from proj.config import CONF
-from proj.extensions import db, bcrypt
+from proj.extensions import db
 from proj.utils import utcnow, now, json_dumps, random_string, camelcase_to_underscore
 from proj.utils.encrypt import aes
 from proj.utils import ok_jsonify, fail_jsonify

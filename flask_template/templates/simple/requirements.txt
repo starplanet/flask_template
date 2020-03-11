@@ -6,3 +6,4 @@ gunicorn
 click
 shortuuid
 pycrypto
+pymysql

@@ -18,6 +18,10 @@ will create a flask project directory named after project_name on current path.
 
 # update logs
 
+## 0.4.2
+1. update requirements
+2. fix bugs
+
 ## 0.4.1
 
 1. modify config.py;
