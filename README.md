@@ -15,6 +15,15 @@ will create a flask project directory named after project_name on current path.
 
 `flasktemplate list` will list current supported templates.
 
+normal project initial usage flow:
+1. `cd {project_name}`
+2. `pyenv virtualenv {python_version} {virtualenv_name}`
+3. `pyenv activate {virtualenv_name}`
+4. modify `SQLALCHEMY_DATABASE_URI` with correct database account and database name
+5. design and develop models and migrate, apply them into database with:
+    1. `python manage.py db migrate`
+    2. `python manage.py db upgrade`
+6. design develop apis
 
 # update logs
 

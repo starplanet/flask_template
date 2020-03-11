@@ -34,6 +34,8 @@ def create(template, project_name):
     sh.cp('-rf', os.path.join(HERE, 'templates/simple/'), project_dir)
     for f in sh.find(project_dir, '-name', '*.py'):
         sh.sed('-i', '', '-e', 's/%s/%s/g' % ('proj', project_name), f.strip())
+    # hack: custom model import
+    sh.sed('-i', '', '-e', 's/%s/%s/g' % ('proj', project_name), './%s/migrations/script.py.mako' % project_name)
     sh.mv(os.path.join(project_dir, 'proj'), os.path.join(project_dir, project_name))
 
 
