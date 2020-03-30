@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+flask-mongoengine
+gunicorn
+
+click
+shortuuid
+pycrypto
+pymysql
