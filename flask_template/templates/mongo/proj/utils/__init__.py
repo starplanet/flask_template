@@ -3,6 +3,7 @@ import decimal
 import json
 import tarfile
 import re
+import io
 
 import shortuuid
 from flask import jsonify
@@ -119,3 +120,11 @@ def compress_file(uncompress_path, compress_path):
     tar = tarfile.open(compress_path, "w:gz")
     tar.add(uncompress_path)
     tar.close()
+
+
+def create_csv_file(df):
+    '''创建 file-object 对象'''
+    buf = io.StringIO()
+    df.to_csv(buf)
+    buf.seek(0)
+    return buf
