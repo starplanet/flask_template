@@ -19,12 +19,6 @@ def manager():
     pass
 
 
-@manager.command()
-def resetdb():
-    db.drop_all()
-    db.engine.execute('DROP TABLE IF EXISTS alembic_version')
-
-
 manager.add_command(run_command, 'run')
 manager.add_command(run_command, 'runserver')
 manager.add_command(shell_command, 'shell')

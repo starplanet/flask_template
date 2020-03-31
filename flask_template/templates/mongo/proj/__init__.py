@@ -1,12 +1,12 @@
 from flask import Flask
 
-from proj.config import get_config_class
+from proj.config import CONF
 from proj import handlers
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object(get_config_class())
+    app.config.from_object(CONF)
 
     configure_log(app)
     register_extensions(app)
