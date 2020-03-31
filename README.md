@@ -34,7 +34,11 @@ normal project initial usage flow:
 
 ## 0.4.3
 1. add mongo template
-2. add new features, such as  user authentication, send email, celery workers
+	1. change db from mysql into mongodb
+	2. add  hamlet user authentication, send email
+	3. add celery wokers
+	4. add send email,  tar/zip file,  send file
+	5. add dockerfile
 
 ## 0.4.2
 1. update requirements
