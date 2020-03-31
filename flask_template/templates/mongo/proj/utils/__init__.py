@@ -1,6 +1,7 @@
 import datetime
 import decimal
 import json
+import tarfile
 import re
 
 import shortuuid
@@ -99,3 +100,22 @@ def camelcase_to_underscore(s):
 
 def random_string(length=10):
     return shortuuid.random(length)
+
+
+def decompress_file(fname):
+    '''解压缩文件'''
+    if fname.endswith("tar.gz"):
+        tar = tarfile.open(fname, "r:gz")
+        tar.extractall()
+        tar.close()
+    elif fname.endswith("tar"):
+        tar = tarfile.open(fname, "r:")
+        tar.extractall()
+        tar.close()
+
+
+def compress_file(uncompress_path, compress_path):
+    '''压缩文件'''
+    tar = tarfile.open(compress_path, "w:gz")
+    tar.add(uncompress_path)
+    tar.close()
