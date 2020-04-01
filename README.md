@@ -13,6 +13,11 @@ templates used to fast create flask project.
 
 will create a flask project directory named after project_name on current path.
 
+`flasktemplate create -t mongo project_name`
+
+will create a flask project  directory named after project_name on current path.
+mongo template will use mongodb instead of mysql.
+
 `flasktemplate list` will list current supported templates.
 
 normal project initial usage flow:
@@ -26,6 +31,14 @@ normal project initial usage flow:
 6. design develop apis
 
 # update logs
+
+## 0.4.3
+1. add mongo template
+	1. use mongodb instead of mysql as database
+	2. add  hamlet user authentication, send email
+	3. add celery wokers
+	4. add send email,  tar/zip file,  send file
+	5. add dockerfile
 
 ## 0.4.2
 1. update requirements

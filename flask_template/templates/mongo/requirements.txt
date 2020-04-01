@@ -1,0 +1,11 @@
+Flask
+flask-mongoengine
+gunicorn
+
+click
+shortuuid
+pycrypto
+
+pandas
+tablib==0.13.0
+requests
