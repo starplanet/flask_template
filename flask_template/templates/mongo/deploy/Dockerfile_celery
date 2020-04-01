@@ -13,6 +13,6 @@ ENV YINLP_ENV prod
 ENV C_FORCE_ROOT yes
 ENV TZ Asia/Shanghai
 
-RUN mkdir -p /data/logs/project_name
+RUN mkdir -p /data/logs/proj
 
 CMD celery -A celery_worker.celery worker -c ${WORKER_NUM:-8} -l ${LOG_LEVEL:-info}

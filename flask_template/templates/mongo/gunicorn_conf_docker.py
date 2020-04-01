@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import logging
 
-LOG_PATH = '/data/logs/project_name'
-PID_FILE = 'project_name.pid'
+LOG_PATH = '/data/logs/proj'
+PID_FILE = 'proj.pid'
 
 bind = '%s:%s' % ('0.0.0.0', 80)
 workers = 4

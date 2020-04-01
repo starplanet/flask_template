@@ -9,9 +9,8 @@ WORKDIR /app
 ADD . /app
 
 ENV WORD_EXTENSION_ENV prod
-ENV C_FORCE_ROOT yes
 ENV TZ Asia/Shanghai
 
-RUN mkdir -p /data/logs/project_name
+RUN mkdir -p /data/logs/proj
 
 CMD gunicorn -c gunicorn_conf_docker.py wsgi:app

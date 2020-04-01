@@ -128,3 +128,14 @@ def create_csv_file(df):
     df.to_csv(buf)
     buf.seek(0)
     return buf
+
+
+def check_file_suffix(fname):
+    """
+    检查上传的文件 格式是否符合要求
+    """
+    accept_suffix = ['.csv', '.xls', '.xlsx']
+    for item in accept_suffix:
+        if fname.endswith(item):
+            return True
+    return False
