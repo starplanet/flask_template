@@ -1,11 +1,13 @@
 Flask
 flask-mongoengine
 gunicorn
+sqlalchemy
 
 click
 shortuuid
 pycrypto
-
+celery
+jwt
 pandas
 tablib==0.13.0
 requests
