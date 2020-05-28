@@ -20,7 +20,7 @@ def register_extensions(app):
 
     db.init_app(app)
     hamlet.init_app(app)
-    celery.conf.update(app.config)
+    celery.config_from_object(CONF)
     handlers.init_app(app)
 
 
