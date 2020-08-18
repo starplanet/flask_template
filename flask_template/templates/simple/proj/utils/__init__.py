@@ -44,11 +44,11 @@ def pretty_print(v):
 
 
 def ok_jsonify(data=None):
-    return jsonify({'ok': True, 'data': data or {}})
+    return jsonify({'ok': True, 'data': data if data != None else {}})
 
 
 def fail_jsonify(reason, data=None):
-    return jsonify({'ok': False, 'data': data or {}, 'reason': reason})
+    return jsonify({'ok': False, 'data': data if data != None else {}, 'reason': reason})
 
 
 def validate_email(address):
