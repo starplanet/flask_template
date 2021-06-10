@@ -32,6 +32,13 @@ normal project initial usage flow:
 
 # update logs
 
+## 0.4.5
+1. add ym_logger module to simple template
+2. update requirements file for simple template, fix dependencies version
+
+## 0.4.4
+1. optimize utility functions
+
 ## 0.4.3
 1. add mongo template
 	1. use mongodb instead of mysql as database
