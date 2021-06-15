@@ -32,6 +32,9 @@ normal project initial usage flow:
 
 # update logs
 
+## 0.4.6
+1. bug fixed
+
 ## 0.4.5
 1. add ym_logger module to simple template
 2. update requirements file for simple template, fix dependencies version

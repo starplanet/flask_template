@@ -48,7 +48,7 @@ def ok_jsonify(data=None):
 
 
 def fail_jsonify(reason, data=None):
-    return jsonify({'ok': True, 'data': data if data is not None else {}, 'reason': reason})
+    return jsonify({'ok': False, 'data': data if data is not None else {}, 'reason': reason})
 
 
 def validate_email(address):
